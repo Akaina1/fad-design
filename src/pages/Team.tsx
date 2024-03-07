@@ -1,11 +1,10 @@
 import React from 'react';
-import { LandingContentContainer } from '@/components/LandingContentContainer';
 import NavBar from '@/components/NavBar';
 import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
 
 // Your page component
-const Home: React.FC = () => {
+const Team: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Main Content */}
@@ -21,7 +20,7 @@ const Home: React.FC = () => {
 
         {/* Right Column */}
         <div className="flex-grow">
-          <LandingContentContainer />
+            
         </div>
       </div>
 
@@ -31,4 +30,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Team;
