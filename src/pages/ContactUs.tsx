@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '@/components/NavBar';
 import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
+import ContactForm from '@/components/ContactForm';
 
 // Your page component
 const ContactUs: React.FC = () => {
@@ -19,8 +20,8 @@ const ContactUs: React.FC = () => {
         </div>
 
         {/* Right Column */}
-        <div className="flex-grow">
-            
+        <div className="flex-grow flex justify-center items-center">
+          <ContactForm />
         </div>
       </div>
 

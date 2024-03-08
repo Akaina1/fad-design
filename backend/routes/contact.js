@@ -19,13 +19,13 @@ const transporter = nodemailer.createTransport({
 });
 
 router.post('/send-email', (req, res) => {
-  const { name, email, message } = req.body;
+  const { name, email, subject, body } = req.body;
 
   const mailOptions = {
-    from: 'your_email@gmail.com', // replace with your email
-    to: 'recipient_email@example.com', // replace with recipient's email
-    subject: 'New Contact Form Submission',
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+    from: email, // Use the user's provided email as the sender
+    to: process.env.EMAIL_USERNAME, // Replace with your email address
+    subject: subject || 'New Contact Form Submission', // Use provided subject or a default value
+    text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${body}`
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
