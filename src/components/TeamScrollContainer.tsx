@@ -5,7 +5,7 @@ import { TeamCard } from "./TeamCard";
 const teamData = [
     {
       visibleText: "Founder 1",
-      revealText: "Me",
+      revealText: "Myself",
     },
     {
       visibleText: "Founder 2",

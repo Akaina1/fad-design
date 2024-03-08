@@ -20,7 +20,7 @@ const Home: React.FC = () => {
         </div>
 
         {/* Right Column */}
-        <div className="flex-grow">
+        <div className="flex-grow overflow-y-auto h-screen relative">
           <LandingContentContainer />
         </div>
       </div>
