@@ -20,7 +20,7 @@ const ContactUs: React.FC = () => {
         </div>
 
         {/* Right Column */}
-        <div className="flex-grow flex justify-center items-center">
+        <div className="flex-grow flex flex-col items-center justify-center mx-16">
           <ContactForm />
         </div>
       </div>

@@ -34,44 +34,47 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="min-w-full mx-auto m-8 p-4 border-2 shadow-xl">
-      <label className="block mb-2 text-gray-700">
-        Name:
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          className="w-full p-2 border-b-2 focus:outline-none focus:border-blue-500"
-        />
-      </label>
-      <label className="block mb-2 text-gray-700">
-        Email:
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          className="w-full p-2 border-b-2 focus:outline-none focus:border-blue-500"
-        />
-      </label>
-      <label className="block mb-2 text-gray-700">
-        Message:
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-          rows={4}
-          className="w-full p-2 border-b-2 focus:outline-none focus:border-blue-500"
-        />
-      </label>
-      <button type="submit" className="bg-blue-500 text-white p-2 rounded hover:bg-blue-700 focus:outline-none">
-        Submit
-      </button>
-    </form>
+    <div className="min-w-full mx-auto m-8 p-4">
+      <h1 className="text-black text-4xl font-bold mb-4">Contact Us</h1>
+      <form onSubmit={handleSubmit} className="min-w-full mx-auto m-8 p-4 border-2 shadow-xl">
+        <label className="block mb-2 text-gray-700">
+          Name:
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="w-full p-2 border-b-2 focus:outline-none focus:border-blue-500"
+          />
+        </label>
+        <label className="block mb-2 text-gray-700">
+          Email:
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="w-full p-2 border-b-2 focus:outline-none focus:border-blue-500"
+          />
+        </label>
+        <label className="block mb-2 text-gray-700">
+          Message:
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            rows={4}
+            className="w-full p-2 border-b-2 focus:outline-none focus:border-blue-500"
+          />
+        </label>
+        <button type="submit" className="bg-blue-500 text-white p-2 rounded hover:bg-blue-700 focus:outline-none">
+          Submit
+        </button>
+      </form>
+    </div>
   );
 };
 
