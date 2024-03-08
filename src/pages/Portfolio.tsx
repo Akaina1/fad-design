@@ -20,7 +20,8 @@ const Portfolio: React.FC = () => {
         </div>
 
         {/* Right Column */}
-        <div className="flex-grow overflow-y-auto h-screen">
+        <div className="flex-grow overflow-y-auto h-screen relative">
+          <h1 className='text-black text-center pt-6 text-5xl sticky top-0 bg-white z-10'>Portfolio</h1>
           <ProjectsScrollContainer />
         </div>
       </div>

@@ -4,40 +4,28 @@ import { TeamCard } from "./TeamCard";
 
 const teamData = [
     {
-      visibleText: "John Doe",
-      revealText: "Front-End Developer",
-      title: "Team Member 1",
-      description: "Description for Team Member 1",
+      visibleText: "Founder 1",
+      revealText: "Me",
     },
     {
-      visibleText: "Jane Doe",
-      revealText: "Back-End Developer",
-      title: "Team Member 2",
-      description: "Description for Team Member 2",
+      visibleText: "Founder 2",
+      revealText: "This could be you...",
     },
     {
-        visibleText: "Bob Miller",
-        revealText: "Team-Lead",
-        title: "Team Member 1",
-        description: "Description for Team Member 3",
+        visibleText: "Founder 3",
+        revealText: "This could be you...",
       },
       {
-        visibleText: "Joe Johnson",
-        revealText: "Marketing",
-        title: "Team Member 2",
-        description: "Description for Team Member 4",
+        visibleText: "Founder 4",
+        revealText: "This could be you...",
       },
       {
-        visibleText: "Ashley Reel",
-        revealText: "Front-End Developer",
-        title: "Team Member 1",
-        description: "Description for Team Member 5",
+        visibleText: "Founder 5",
+        revealText: "This could be you...",
       },
       {
-        visibleText: "Janet Jade",
-        revealText: "Team-Lead",
-        title: "Team Member 2",
-        description: "Description for Team Member 6",
+        visibleText: "Founder 6",
+        revealText: "This could be you...",
       },
     // Add more team members as needed
   ];

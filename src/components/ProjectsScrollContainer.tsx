@@ -4,31 +4,38 @@ import { ProjectCard } from "./ProjectCard";
 
 const projectData = [
   {
-    title: "Project 1",
-    description: "Description for Project 1",
-    imageUrl: "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Insight Collective",
+    description: "A dedicated web portal for my ARG",
+    imageUrl: '/IMG/IC_Project_Photo.png',
+    viewDetailsLink: "/Projects/IC",
+    liveLink: "https://insight-collective.org",
+  },
+  {
+    title: "This Website!",
+    description: "The FAD Design website that you are currently on",
+    imageUrl: '/IMG/Fad_Project_Photo.png',
+    viewDetailsLink: "/Projects/FAD",
+    liveLink: "https://insight-collective.org",
+  },
+  {
+    title: "Green Customs",
+    description: "An E-commerce website for selling computer parts and creating custom builds",
+    imageUrl: "/IMG/GC_Project_Photo.png",
+    viewDetailsLink: "/Projects/GreenCustoms",
+    liveLink: "https://green-customs.netlify.app/",
+  },
+  {
+    title: "Venezia Kitchen",
+    description: "A mockup website for a restaurant with a food delivery service",
+    imageUrl: "/IMG/VC_Project_Photo.png",
+    viewDetailsLink: "/Projects/Venezia",
+    liveLink: "https://akaina1-venezia-kitchen.netlify.app/",
+  },
+  {
+    title: "Our Next Project",
+    description: "Help build the next great website",
+    imageUrl: "/IMG/Placeholder_Project_Photo.png",
     viewDetailsLink: "/Projects/Project1",
-    liveLink: "https://example.com/project1-live",
-  },
-  {
-    title: "Project 2",
-    description: "Description for Project 1",
-    imageUrl: "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    viewDetailsLink: "/404",
-    liveLink: "https://example.com/project1-live",
-  },
-  {
-    title: "Project 3",
-    description: "Description for Project 1",
-    imageUrl: "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    viewDetailsLink: "/404",
-    liveLink: "https://example.com/project1-live",
-  },
-  {
-    title: "Project 4",
-    description: "Description for Project 1",
-    imageUrl: "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    viewDetailsLink: "/404",
     liveLink: "https://example.com/project1-live",
   },
   // Add more projects as needed

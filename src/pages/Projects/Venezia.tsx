@@ -6,15 +6,15 @@ import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
 import ProjectInformationContainer from '@/components/ProjectInformationContainer';
 
-const Project1: React.FC = () => {  
+const Venezia: React.FC = () => {  
     // Placeholder project data, replace with actual project data
     const projectData = {
-      projectName: 'The Next Big Project',
-      projectPhotoUrl: '/IMG/Placeholder_Project_Photo.png',
-      technologiesUsed: ['React', 'Node.js', 'MongoDB', 'Express', 'Next.js', 'TailwindCSS', 'Aceternity UI', 'Heroku', 'Vercel', 'Firebase', 'GitHub', 'Git'],
-      projectDescription: 'Join us as we strive to build the next big thing! Here at FAD Design we beileve web development is the perfect mix of creativity and logic.  We can use this to attract billions of consumers worldwide.',
-      githubLink: 'https://github.com/Akaina1',
-      liveLink: 'https://example.com',
+      projectName: 'FAD Design Website',
+      projectPhotoUrl: '/IMG/VC_Project_Photo.png',
+      technologiesUsed: ['React', 'HTML', 'CSS', 'JavaScript'],
+      projectDescription: 'Another simple web app for a fictional restaurant. I created this to practice with CSS styling before founding FAD Design. This was created with React, HTML, CSS, and JavaScript. This project is a simple web app that allows users to view the menu and place orders.',
+      githubLink: 'https://github.com/Akaina1/Venezia-Kitchen',
+      liveLink: 'https://akaina1-venezia-kitchen.netlify.app/',
     };
   
     return (
@@ -42,4 +42,4 @@ const Project1: React.FC = () => {
     );
   };
   
-  export default Project1;
+  export default Venezia;

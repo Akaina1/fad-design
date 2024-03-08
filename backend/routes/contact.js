@@ -8,7 +8,6 @@ dotenv.config(); // Load environment variables from .env file
 const router = express.Router();
 
 router.use(bodyParser.json());
-router.use(bodyParser.urlencoded({ extended: true }));
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -18,22 +17,30 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-router.post('/send-email', (req, res) => {
-  const { name, email, subject, body } = req.body;
+router.post('/send-email', async (req, res) => {
+  try {
+    const { name, email, message } = req.body;
 
-  const mailOptions = {
-    from: email, // Use the user's provided email as the sender
-    to: process.env.EMAIL_USERNAME, // Replace with your email address
-    subject: subject || 'New Contact Form Submission', // Use provided subject or a default value
-    text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${body}`
-  };
-
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      return res.status(500).send(error.toString());
+    // Validate required fields
+    if (!name || !email || !message) {
+      return res.status(400).json({ error: 'Missing required fields' });
     }
+
+    const mailOptions = {
+      from: email,
+      to: process.env.EMAIL_USERNAME,
+      subject: 'New Contact Form Submission',
+      text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`
+    };
+
+    const info = await transporter.sendMail(mailOptions);
+
     res.status(200).send('Email sent: ' + info.response);
-  });
+  } catch (error) {
+    console.error('Error sending email:', error);
+    res.status(500).send(`Internal Server Error: ${error.message}`);
+  }
 });
+
 
 module.exports = router;

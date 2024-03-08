@@ -6,15 +6,15 @@ import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
 import ProjectInformationContainer from '@/components/ProjectInformationContainer';
 
-const Project1: React.FC = () => {  
+const IC: React.FC = () => {  
     // Placeholder project data, replace with actual project data
     const projectData = {
-      projectName: 'The Next Big Project',
-      projectPhotoUrl: '/IMG/Placeholder_Project_Photo.png',
-      technologiesUsed: ['React', 'Node.js', 'MongoDB', 'Express', 'Next.js', 'TailwindCSS', 'Aceternity UI', 'Heroku', 'Vercel', 'Firebase', 'GitHub', 'Git'],
-      projectDescription: 'Join us as we strive to build the next big thing! Here at FAD Design we beileve web development is the perfect mix of creativity and logic.  We can use this to attract billions of consumers worldwide.',
+      projectName: 'FAD Design Website',
+      projectPhotoUrl: '/IMG/ICLOGO.png',
+      technologiesUsed: ['Next.js', 'TailwindCSS', 'Aceternity UI', 'Framer Motion', 'TypeScript', 'Node.js', 'Express.js'],
+      projectDescription: 'Before starting FAD Design this was my largest project I had ever created. This is a full stack web application that operates as a central hub for an Augmented Reality Experience. Players will be given different handmade materials used to solve puzzles. This is a continuous experience with future updates planned as well as a plan to scale the project as more players join the experience. Due to the nature of this project I cannot release the source code.',
       githubLink: 'https://github.com/Akaina1',
-      liveLink: 'https://example.com',
+      liveLink: 'https://www.insight-collective.org',
     };
   
     return (
@@ -42,4 +42,4 @@ const Project1: React.FC = () => {
     );
   };
   
-  export default Project1;
+  export default IC;

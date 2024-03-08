@@ -6,15 +6,15 @@ import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
 import ProjectInformationContainer from '@/components/ProjectInformationContainer';
 
-const Project1: React.FC = () => {  
+const GreenCustoms: React.FC = () => {  
     // Placeholder project data, replace with actual project data
     const projectData = {
-      projectName: 'The Next Big Project',
-      projectPhotoUrl: '/IMG/Placeholder_Project_Photo.png',
-      technologiesUsed: ['React', 'Node.js', 'MongoDB', 'Express', 'Next.js', 'TailwindCSS', 'Aceternity UI', 'Heroku', 'Vercel', 'Firebase', 'GitHub', 'Git'],
-      projectDescription: 'Join us as we strive to build the next big thing! Here at FAD Design we beileve web development is the perfect mix of creativity and logic.  We can use this to attract billions of consumers worldwide.',
-      githubLink: 'https://github.com/Akaina1',
-      liveLink: 'https://example.com',
+      projectName: 'Green Customs E-commerce Site',
+      projectPhotoUrl: '/IMG/GC_Project_Photo.png',
+      technologiesUsed: ['React', 'Node.js', 'Express.js', 'MongoDB', 'SASS', 'JavaScript', 'Passport.js', 'JWT'],
+      projectDescription: 'This was another large project I did with the idea of creating an ecommerce platform dedicated to computer components and accessories. It features a full database in MongoDB, Express Server with authentication, as well as a custom API.',
+      githubLink: 'https://github.com/Akaina1/Ecommerce-App',
+      liveLink: 'https://green-customs.netlify.app/',
     };
   
     return (
@@ -42,4 +42,4 @@ const Project1: React.FC = () => {
     );
   };
   
-  export default Project1;
+  export default GreenCustoms;

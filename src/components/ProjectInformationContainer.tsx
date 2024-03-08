@@ -1,6 +1,7 @@
 // components/ProjectInformationContainer.tsx
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface ProjectInformationContainerProps {
   projectName: string;
@@ -20,41 +21,45 @@ const ProjectInformationContainer: React.FC<ProjectInformationContainerProps> = 
   liveLink,
 }) => {
   return (
-    <div className="grid grid-cols-2 gap-8">
-      {/* Top Left - Project Photo */}
-      <div className="col-span-1 row-span-2 mr-8">
-        <img src={projectPhotoUrl} alt={`${projectName} Photo`} className="w-500 h-500" />
-      </div>
-  
-      {/* Top Right - Technologies Used */}
-      <div className="col-span-1 row-span-1 border-black dark:border-white dark:text-white dark:bg-gray-700 bg-white p-12 mb-12 text-center text-2xl">
-        <h2 className="text-5xl mb-6">Technologies Used:</h2>
-        <div className="grid grid-cols-3 gap-2 justify-items-center">
-          {technologiesUsed.map((tech, index) => (
-            <div key={index} className="text-left">
-              {tech}
-            </div>
-          ))}
+    <div className="flex">
+      {/* Left Column */}
+      <div className="flex flex-col mr-8">
+        {/* Project Photo */}
+        <div className="mb-8">
+          <Image src={projectPhotoUrl} alt={`${projectName} Photo`} height={2000} width={2000} />
+        </div>
+
+        {/* Github and Live Links */}
+        <div className="flex flex-col justify-start gap-12">
+          <Link href={githubLink}>
+            <button className="border-2 border-black dark:border-white dark:text-white dark:bg-blue-500 text-black bg-white p-4 mb-2">
+              Github
+            </button>
+          </Link>
+          <Link href={liveLink}>
+            <button className="border-2 border-black dark:border-white dark:text-white dark:bg-blue-500 text-black bg-white p-4">
+              Live Link
+            </button>
+          </Link>
         </div>
       </div>
-  
-      {/* Bottom Left - Github and Live Links */}
-      <div className="col-span-1 row-span-1 flex flex-row justify-start gap-12">
-        <Link href={githubLink}>
-          <button className="border-2 border-black dark:border-white dark:text-white dark:bg-blue-500 text-black bg-white p-4 mb-2">
-            Github
-          </button>
-        </Link>
-        <Link href={liveLink}>
-          <button className="border-2 border-black dark:border-white dark:text-white dark:bg-blue-500 text-black bg-white p-4">
-            Live Link
-          </button>
-        </Link>
-      </div>
-  
-      {/* Bottom Right - Project Description */}
-      <div className="col-span-2 row-span-1">
-        <div className="border-black dark:border-white dark:text-white dark:bg-gray-700 bg-white p-12">
+
+      {/* Right Column */}
+      <div className="flex flex-col">
+        {/* Technologies Used */}
+        <div className="border-black dark:border-white dark:text-white dark:bg-gray-700 bg-white p-12 mb-12 text-center text-2xl">
+          <h2 className="text-5xl mb-6">Technologies Used:</h2>
+          <div className="grid grid-cols-3 gap-4 justify-items-center">
+            {technologiesUsed.map((tech, index) => (
+              <div key={index} className="text-left">
+                {tech}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Project Description */}
+        <div className="flex-grow border-black dark:border-white dark:text-white dark:bg-gray-700 bg-white p-12">
           <h1 className="text-5xl mb-6">Project Description:</h1>
           <p className='text-lg'>{projectDescription}</p>
         </div>

@@ -21,17 +21,28 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+  
     try {
       // Send form data to the backend
-      const response = await axios.post('/api/contact/send-email', formData);
-      console.log(response.data);
-      // You can handle the response as needed (e.g., show a success message)
+      const response = await axios.post(
+        'http://localhost:3001/contact/send-email',
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+        // You can handle the response as needed (e.g., show a success message)
     } catch (error) {
       console.error(error);
       // Handle error (e.g., show an error message)
     }
-  };
+  };  
 
   return (
     <div className="min-w-full mx-auto m-8 p-4">

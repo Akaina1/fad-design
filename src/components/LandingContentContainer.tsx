@@ -15,13 +15,12 @@ export function LandingContentContainer() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">House in the woods</p>
+      <p className="font-bold text-4xl text-white">FAD Design Website</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A serene and tranquil retreat, this house in the woods offers a peaceful
-        escape from the hustle and bustle of city life.
+        A Modern, interactive website for FAD Design.
       </p>
-      <Link href="/404" passHref>
+      <Link href="/Projects/FAD" passHref>
           <button className="bg-blue-500 text-white px-4 py-2">
           Project Details
           </button>
@@ -33,14 +32,12 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">House above the clouds</p>
+      <p className="font-bold text-4xl text-white">Help Us Create The Next Best Website</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Perched high above the world, this house offers breathtaking views and a
-        unique living experience. It&apos;s a place where the sky meets home,
-        and tranquility is a way of life.
+        Join FAD Design and help us create a new standard in website design.
       </p>
-      <Link href="/404" passHref>
+      <Link href="/Project1" passHref>
           <button className="bg-blue-500 text-white px-4 py-2">
           Project Details
           </button>
@@ -51,13 +48,12 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Greens all over</p>
+      <p className="font-bold text-4xl text-white">Insight Collective ARG</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+        A Dedicated web portal for an Augmented Reality Game.
       </p>
-      <Link href="/404" passHref>
+      <Link href="/IC" passHref>
           <button className="bg-blue-500 text-white px-4 py-2">
           Project Details
           </button>
@@ -68,13 +64,28 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Rivers are serene</p>
+      <p className="font-bold text-4xl text-white">Green Customs</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house by the river is a place of peace and tranquility. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+        A fictional E-commerce business that sells computer components and allows users to customize their computers with parts held by the company.
       </p>
-      <Link href="/404" passHref>
+      <Link href="/GreenCustoms" passHref>
+          <button className="bg-blue-500 text-white px-4 py-2">
+            Project Details
+          </button>
+      </Link>
+    </div>
+  );
+};
+const SkeletonFive = () => {
+  return (
+    <div>
+      <p className="font-bold text-4xl text-white">Venezia Kitchen</p>
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        A fictional restaurant that features a full ordering system built ontop of a visually appealing website.
+      </p>
+      <Link href="/GreenCustoms" passHref>
           <button className="bg-blue-500 text-white px-4 py-2">
             Project Details
           </button>
@@ -89,55 +100,55 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/IMG/Fad_Project_Photo.png",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
-    className: "col-span-1",
+    className: "md:col-span-1",
     thumbnail:
-      "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/IMG/Placeholder_Project_Photo.png",
   },
   {
     id: 3,
-    content: <SkeletonThree />,
+    content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
-      "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/IMG/Placeholder_Project_Photo.png",
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/IMG/GC_Project_Photo.png",
   },
   {
     id: 5,
-    content: <SkeletonFour />,
+    content: <SkeletonFive />,
     className: "md:col-span-1",
     thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/IMG/VC_Project_Photo.png",
   },
   {
     id: 6,
-    content: <SkeletonFour />,
+    content: <SkeletonTwo />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/IMG/Placeholder_Project_Photo.png",
   },
   {
     id: 7,
-    content: <SkeletonFour />,
+    content: <SkeletonTwo />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/IMG/Placeholder_Project_Photo.png",
   },
   {
     id: 8,
-    content: <SkeletonFour />,
-    className: "md:col-span-1",
+    content: <SkeletonThree />,
+    className: "col-span-1",
     thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/IMG/IC_Project_Photo.png",
   },
 ];

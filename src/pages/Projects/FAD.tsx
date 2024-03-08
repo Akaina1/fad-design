@@ -6,15 +6,15 @@ import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
 import ProjectInformationContainer from '@/components/ProjectInformationContainer';
 
-const Project1: React.FC = () => {  
+const FAD: React.FC = () => {  
     // Placeholder project data, replace with actual project data
     const projectData = {
-      projectName: 'The Next Big Project',
-      projectPhotoUrl: '/IMG/Placeholder_Project_Photo.png',
-      technologiesUsed: ['React', 'Node.js', 'MongoDB', 'Express', 'Next.js', 'TailwindCSS', 'Aceternity UI', 'Heroku', 'Vercel', 'Firebase', 'GitHub', 'Git'],
-      projectDescription: 'Join us as we strive to build the next big thing! Here at FAD Design we beileve web development is the perfect mix of creativity and logic.  We can use this to attract billions of consumers worldwide.',
-      githubLink: 'https://github.com/Akaina1',
-      liveLink: 'https://example.com',
+      projectName: 'FAD Design Website',
+      projectPhotoUrl: '/IMG/Fad_Project_Photo.png',
+      technologiesUsed: ['Next.js', 'TailwindCSS', 'Aceternity UI', 'Framer Motion', 'TypeScript', 'Node.js', 'Express.js'],
+      projectDescription: 'This started out as a personal project for my portfolio. The idea was to build a fictional business and create a website for it with a focus on animations and interactivity.  Soon I began to imagine what it might be like to turn this into a real business...',
+      githubLink: 'https://github.com/Akaina1/fad-design',
+      liveLink: 'https://yourprojectdemo.com',
     };
   
     return (
@@ -42,4 +42,4 @@ const Project1: React.FC = () => {
     );
   };
   
-  export default Project1;
+  export default FAD;
