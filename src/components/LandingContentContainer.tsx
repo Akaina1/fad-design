@@ -23,7 +23,7 @@ const SkeletonOne = () => {
       </p>
       <Link href="/404" passHref>
           <button className="bg-blue-500 text-white px-4 py-2">
-            Button
+          Project Details
           </button>
       </Link>
     </div>
@@ -42,7 +42,7 @@ const SkeletonTwo = () => {
       </p>
       <Link href="/404" passHref>
           <button className="bg-blue-500 text-white px-4 py-2">
-            Button
+          Project Details
           </button>
       </Link>
     </div>
@@ -59,7 +59,7 @@ const SkeletonThree = () => {
       </p>
       <Link href="/404" passHref>
           <button className="bg-blue-500 text-white px-4 py-2">
-            Button
+          Project Details
           </button>
       </Link>
     </div>
@@ -76,7 +76,7 @@ const SkeletonFour = () => {
       </p>
       <Link href="/404" passHref>
           <button className="bg-blue-500 text-white px-4 py-2">
-            Button
+            Project Details
           </button>
       </Link>
     </div>

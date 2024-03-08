@@ -21,7 +21,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-gray-800 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-gray-800 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto p-6 border  ">
         <CardItem
           translateZ="50"
           className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -40,7 +40,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             src={imageUrl}
             height="1000"
             width="1000"
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            className="h-60 w-full object-cover group-hover/card:shadow-xl"
             alt="thumbnail"
           />
         </CardItem>
@@ -51,7 +51,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             </button>
           </Link>
           <Link href={liveLink}>
-            <button className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
+            <button className="px-4 py-2 bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
               Live Link
             </button>
           </Link>
