@@ -2,6 +2,8 @@ import React from 'react';
 import NavBar from '@/components/NavBar';
 import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
+import F3Container from '@/components/F3Container';
+import AboutUsTextBox from '@/components/AboutUsTextBox';
 
 // Your page component
 const AboutUs: React.FC = () => {
@@ -19,8 +21,9 @@ const AboutUs: React.FC = () => {
         </div>
 
         {/* Right Column */}
-        <div className="flex-grow">
-            
+        <div className="flex-grow p-8">
+          <AboutUsTextBox />
+          <F3Container />
         </div>
       </div>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '@/components/NavBar';
 import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
+import { ProjectsScrollContainer } from '@/components/ProjectsScrollContainer';
 
 // Your page component
 const Portfolio: React.FC = () => {
@@ -19,8 +20,8 @@ const Portfolio: React.FC = () => {
         </div>
 
         {/* Right Column */}
-        <div className="flex-grow">
-            
+        <div className="flex-grow overflow-y-auto h-screen">
+          <ProjectsScrollContainer />
         </div>
       </div>
 
