@@ -1,4 +1,3 @@
-// components/ContactForm.tsx
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -14,6 +13,8 @@ const ContactForm: React.FC = () => {
     email: '',
     message: '',
   });
+  const [isSubmitDisabled, setIsSubmitDisabled] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,10 +22,12 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-  
+
     try {
+      setIsSubmitDisabled(true);
+
       // Send form data to the backend
-      const response = await axios.post(
+      await axios.post(
         'http://localhost:3001/contact/send-email',
         {
           name: formData.name,
@@ -37,12 +40,19 @@ const ContactForm: React.FC = () => {
           },
         }
       );
-        // You can handle the response as needed (e.g., show a success message)
+
+      // Clear form fields
+      setFormData({ name: '', email: '', message: '' });
+
+      // Update state to show 'Submitted' and change button style
+      setIsSubmitted(true);
     } catch (error) {
       console.error(error);
       // Handle error (e.g., show an error message)
+    } finally {
+      setIsSubmitDisabled(false);
     }
-  };  
+  };
 
   return (
     <div className="min-w-full mx-auto m-8 p-4">
@@ -81,9 +91,17 @@ const ContactForm: React.FC = () => {
             className="w-full p-2 border-b-2 focus:outline-none focus:border-blue-500"
           />
         </label>
-        <button type="submit" className="bg-blue-500 text-white p-2 rounded hover:bg-blue-700 focus:outline-none">
-          Submit
-        </button>
+        {isSubmitted ? (
+          <p className="text-green-500">Submitted</p>
+        ) : (
+          <button
+            type="submit"
+            className="bg-blue-500 text-white p-2 rounded hover:bg-blue-700 focus:outline-none"
+            disabled={isSubmitDisabled}
+          >
+            Submit
+          </button>
+        )}
       </form>
     </div>
   );

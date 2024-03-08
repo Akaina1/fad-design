@@ -30,7 +30,7 @@ router.post('/send-email', async (req, res) => {
       from: email,
       to: process.env.EMAIL_USERNAME,
       subject: 'New Contact Form Submission',
-      text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`
+      text: `Name: ${name}\nEmail: ${email}\nSubject: (New Contact Form Submission)\nMessage: ${message}`
     };
 
     const info = await transporter.sendMail(mailOptions);
