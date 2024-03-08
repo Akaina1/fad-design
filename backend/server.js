@@ -7,7 +7,7 @@ const cors = require('cors'); // Import the cors middleware
 dotenv.config(); // Load environment variables from .env file
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors({
   origin: 'http://localhost:3000', // Allow requests only from this origin
