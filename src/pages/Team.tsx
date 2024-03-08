@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '@/components/NavBar';
 import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
+import { TeamScrollContainer } from '@/components/TeamScrollContainer';
 
 // Your page component
 const Team: React.FC = () => {
@@ -19,8 +20,8 @@ const Team: React.FC = () => {
         </div>
 
         {/* Right Column */}
-        <div className="flex-grow">
-            
+        <div className="flex-grow overflow-y-auto h-screen">
+          <TeamScrollContainer />
         </div>
       </div>
 

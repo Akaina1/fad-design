@@ -28,7 +28,7 @@ const F3Card: React.FC<F3CardProps> = ({
                 height={400}
                 alt="Logo"
               />
-              <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-blue-300 via-blue-700 to-blue-500" />
+              <div className="flex flex-1 w-full mt-4 bg-gradient-to-br from-blue-300 via-blue-700 to-blue-500" />
             </div>
           </PinContainer>
         </div>
