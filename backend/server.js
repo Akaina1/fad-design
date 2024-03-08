@@ -1,21 +1,21 @@
 const express = require('express');
 const contactRoutes = require('./routes/contact');
 const dotenv = require('dotenv');
-const cors = require('cors'); // Import the cors middleware
+const cors = require('cors'); 
 
 
-dotenv.config(); // Load environment variables from .env file
+dotenv.config(); 
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-  origin: 'http://localhost:3000', // Allow requests only from this origin
+  origin: 'https://faddesign.netlify.app'||'http://localhost:3000' , 
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true, // Include credentials in CORS headers (if needed)
+  credentials: true,
 }));
 
-// Use contactRoutes for handling contact-related routes
+
 app.use('/contact', contactRoutes);
 
 app.listen(PORT, () => {
