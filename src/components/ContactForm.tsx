@@ -28,7 +28,7 @@ const ContactForm: React.FC = () => {
 
       // Send form data to the backend
       await axios.post(
-        'http://localhost:3001/contact/send-email',
+        'https://fad-backend.fly.dev/contact/send-email',
         {
           name: formData.name,
           email: formData.email,

@@ -37,7 +37,7 @@ const SkeletonTwo = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         Join FAD Design and help us create a new standard in website design.
       </p>
-      <Link href="/Project1" passHref>
+      <Link href="/Projects/Project1" passHref>
           <button className="bg-blue-500 text-white px-4 py-2">
           Project Details
           </button>
@@ -53,7 +53,7 @@ const SkeletonThree = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         A Dedicated web portal for an Augmented Reality Game.
       </p>
-      <Link href="/IC" passHref>
+      <Link href="/Projects/IC" passHref>
           <button className="bg-blue-500 text-white px-4 py-2">
           Project Details
           </button>
@@ -69,7 +69,7 @@ const SkeletonFour = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         A fictional E-commerce business that sells computer components and allows users to customize their computers with parts held by the company.
       </p>
-      <Link href="/GreenCustoms" passHref>
+      <Link href="/Projects/GreenCustoms" passHref>
           <button className="bg-blue-500 text-white px-4 py-2">
             Project Details
           </button>
@@ -85,7 +85,7 @@ const SkeletonFive = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         A fictional restaurant that features a full ordering system built ontop of a visually appealing website.
       </p>
-      <Link href="/GreenCustoms" passHref>
+      <Link href="/Projects/Venezia" passHref>
           <button className="bg-blue-500 text-white px-4 py-2">
             Project Details
           </button>

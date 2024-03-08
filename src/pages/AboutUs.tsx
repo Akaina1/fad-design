@@ -8,7 +8,7 @@ import AboutUsTextBox from '@/components/AboutUsTextBox';
 // Your page component
 const AboutUs: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen w-full bg-white">
       {/* Main Content */}
       <div className="flex flex-grow">
         {/* Left Column */}
