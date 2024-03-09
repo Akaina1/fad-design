@@ -1,5 +1,4 @@
-// pages/Projects/Project1.tsx
-import { useRouter } from 'next/router';
+// pages/Projects/FAD.tsx
 import React from 'react';
 import NavBar from '@/components/NavBar';
 import LogoContainer from '@/components/LogoContainer';
@@ -20,22 +19,22 @@ const FAD: React.FC = () => {
   
     return (
       <div className="relative min-h-screen bg-white">
-      {/* Grid Background */}
-      <GridBackgroundDemo />
-
-      {/* Main Content */}
-      <div className="flex flex-grow absolute inset-0">
-        {/* Left Column */}
-        <div className="flex flex-col items-center justify-start px-auto h-full">
-          <LogoContainer />
-          {/* Center the NavBar within its column */}
-          <div className="flex items-center flex-col">
-            <NavBar />
+        {/* Grid Background */}
+        <GridBackgroundDemo />
+  
+        {/* Main Content */}
+        <div className="flex absolute inset-0">
+          {/* Left Column */}
+          <div className="flex flex-col items-center justify-startpx-auto h-full">
+            <LogoContainer />
+            {/* Center the NavBar within its column */}
+            <div className="flex items-center flex-col">
+              <NavBar />
+            </div>
           </div>
-        </div>
   
           {/* Right Column */}
-          <div className="flex-grow p-8">
+          <div className="flex w-3/4 p-8">
             <ProjectInformationContainer {...projectData} />
           </div>
         </div>

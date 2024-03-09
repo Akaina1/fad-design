@@ -24,7 +24,7 @@ const IC: React.FC = () => {
       <GridBackgroundDemo />
 
       {/* Main Content */}
-      <div className="flex flex-grow absolute inset-0">
+      <div className="flex absolute inset-0">
         {/* Left Column */}
         <div className="flex flex-col items-center justify-start px-auto h-full">
           <LogoContainer />
@@ -35,7 +35,7 @@ const IC: React.FC = () => {
         </div>
   
           {/* Right Column */}
-          <div className="flex-grow p-8">
+          <div className="flex w-3/4 p-8">
             <ProjectInformationContainer {...projectData} />
           </div>
         </div>
