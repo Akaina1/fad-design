@@ -25,12 +25,12 @@ const ProjectInformationContainer: React.FC<ProjectInformationContainerProps> = 
       {/* Left Column */}
       <div className="flex flex-col mr-8">
         {/* Project Photo */}
-        <div className="mb-8">
-          <Image src={projectPhotoUrl} alt={`${projectName} Photo`} height={2000} width={2000} />
+        <div className="mb-8 ml-11">
+          <Image src={projectPhotoUrl} alt={`${projectName} Photo`} height={1000} width={1000} />
         </div>
 
         {/* Github and Live Links */}
-        <div className="flex flex-col justify-start gap-12">
+        <div className="flex flex-col justify-start gap-12 ml-11">
           <Link href={githubLink}>
             <button className="border-2 border-black dark:border-white dark:text-white dark:bg-blue-500 text-black bg-white p-4 mb-2">
               Github

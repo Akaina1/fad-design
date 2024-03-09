@@ -4,13 +4,17 @@ import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
 import F3Container from '@/components/F3Container';
 import AboutUsTextBox from '@/components/AboutUsTextBox';
+import { GridBackgroundDemo } from '@/components/GridBackground'; // Import the GridBackgroundDemo component
 
 // Your page component
 const AboutUs: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen w-full bg-white">
+    <div className="relative min-h-screen bg-white">
+      {/* Grid Background */}
+      <GridBackgroundDemo />
+
       {/* Main Content */}
-      <div className="flex flex-grow">
+      <div className="flex flex-grow absolute inset-0">
         {/* Left Column */}
         <div className="flex flex-col items-center justify-start px-auto h-full">
           <LogoContainer />

@@ -5,6 +5,7 @@ import NavBar from '@/components/NavBar';
 import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
 import ProjectInformationContainer from '@/components/ProjectInformationContainer';
+import { GridBackgroundDemo } from '@/components/GridBackground'; // Import the GridBackgroundDemo component
 
 const IC: React.FC = () => {  
     // Placeholder project data, replace with actual project data
@@ -18,17 +19,20 @@ const IC: React.FC = () => {
     };
   
     return (
-      <div className="flex flex-col min-h-screen bg-white">
-        {/* Main Content */}
-        <div className="flex flex-grow">
-          {/* Left Column */}
-          <div className="flex flex-col items-center justify-start px-auto h-full w-full">
-            <LogoContainer />
-            {/* Center the NavBar within its column */}
-            <div className="flex items-center flex-col">
-              <NavBar />
-            </div>
+      <div className="relative min-h-screen bg-white">
+      {/* Grid Background */}
+      <GridBackgroundDemo />
+
+      {/* Main Content */}
+      <div className="flex flex-grow absolute inset-0">
+        {/* Left Column */}
+        <div className="flex flex-col items-center justify-start px-auto h-full">
+          <LogoContainer />
+          {/* Center the NavBar within its column */}
+          <div className="flex items-center flex-col">
+            <NavBar />
           </div>
+        </div>
   
           {/* Right Column */}
           <div className="flex-grow p-8">

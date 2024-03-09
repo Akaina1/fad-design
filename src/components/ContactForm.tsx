@@ -55,9 +55,9 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="min-w-full mx-auto m-8 p-4">
+    <div className="min-w-full mx-auto m-8 p-4 bg-white border-1 shadow-xl">
       <h1 className="text-black text-4xl font-bold mb-4">Contact Us</h1>
-      <form onSubmit={handleSubmit} className="min-w-full mx-auto m-8 p-4 border-2 shadow-xl">
+      <form onSubmit={handleSubmit} className="min-w-full mx-auto m-8 p-4">
         <label className="block mb-2 text-gray-700">
           Name:
           <input
