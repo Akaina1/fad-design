@@ -25,7 +25,7 @@ const FAD: React.FC = () => {
         {/* Main Content */}
         <div className="flex absolute inset-0">
           {/* Left Column */}
-          <div className="flex flex-col items-center justify-startpx-auto h-full">
+          <div className="flex flex-col items-center justify-start px-auto h-full">
             <LogoContainer />
             {/* Center the NavBar within its column */}
             <div className="flex items-center flex-col">
