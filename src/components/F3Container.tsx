@@ -10,7 +10,7 @@ const F3Container: React.FC = () => {
       Img_Source: "/IMG/Fun.png",
     },
     {
-      Pin_Title: "Highly interactive sites that will engage your audience and drive them to your business. This will be a new standard for advertisments",
+      Pin_Title: "Highly interactive sites that will engage your audience and drive them to your business. This will be a new standard for advertisements",
       Pin_Href: "/404",
       Display_Title: "Functional",
       Img_Source: "/IMG/Functional.png",
