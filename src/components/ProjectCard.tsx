@@ -45,7 +45,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         </CardItem>
         <div className="flex justify-between items-center mt-20">
           <Link href={viewDetailsLink}>
-            <button className="px-4 py-2 rounded-xl text-xs font-normaltext-white">
+            <button className="px-4 py-2 rounded-xl text-xs font-normal text-white">
               View Details
             </button>
           </Link>
