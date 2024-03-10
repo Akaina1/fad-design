@@ -32,10 +32,12 @@ const teamData = [
   
   export const TeamScrollContainer: React.FC = () => {
     return (
-      <div className="grid grid-cols-1 gap-4 overflow-y-auto p-8 mb-2 max-h-80vh">
-        {teamData.map((teamMember, index) => (
-          <TeamCard key={index} {...teamMember} />
-        ))}
+      <div className="flex items-center justify-center h-full">
+        <div className="grid grid-cols-2 gap-12 overflow-y-auto p-8 mb-2 max-h-80vh">
+          {teamData.map((teamMember, index) => (
+            <TeamCard key={index} {...teamMember} />
+          ))}
+        </div>
       </div>
     );
   };
