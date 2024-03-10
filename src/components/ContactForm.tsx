@@ -54,10 +54,10 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="min-w-full mx-auto m-8 p-4 bg-white border-1 shadow-xl">
-      <h1 className="text-black text-4xl font-bold mb-4">Contact Us</h1>
+    <div className="min-w-full mx-auto m-8 p-4 bg-gray-700 border-1 shadow-xl">
+      <h1 className="text-white text-4xl font-bold mb-4">Contact Us</h1>
       <form onSubmit={handleSubmit} className="min-w-full mx-auto m-8 p-4">
-        <label className="block mb-2 text-gray-700">
+        <label className="block mb-2 text-white text-lg">
           Name:
           <input
             type="text"
@@ -68,7 +68,7 @@ const ContactForm: React.FC = () => {
             className="w-full p-2 border-b-2 focus:outline-none focus:border-blue-500"
           />
         </label>
-        <label className="block mb-2 text-gray-700">
+        <label className="block mb-2 text-white text-lg">
           Email:
           <input
             type="email"
@@ -79,7 +79,7 @@ const ContactForm: React.FC = () => {
             className="w-full p-2 border-b-2 focus:outline-none focus:border-blue-500"
           />
         </label>
-        <label className="block mb-2 text-gray-700">
+        <label className="block mb-2 text-white text-lg">
           Message:
           <textarea
             name="message"

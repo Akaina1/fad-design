@@ -24,7 +24,7 @@ const Portfolio: React.FC = () => {
 
         {/* Right Column */}
         <div className="flex-grow overflow-y-auto h-screen relative">
-          <h1 className='text-black text-center pt-6 text-5xl sticky top-0 bg-transparent z-10'>Portfolio</h1>
+          <h1 className='text-white text-center pt-6 text-5xl sticky top-0 bg-transparent z-10'>Portfolio</h1>
           <ProjectsScrollContainer />
         </div>
       </div>
