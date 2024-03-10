@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 
-dotenv.config(); // Load environment variables from .env file
+dotenv.config(); 
 
 const router = express.Router();
 

@@ -26,7 +26,7 @@ const ContactForm: React.FC = () => {
     try {
       setIsSubmitDisabled(true);
 
-      // Send form data to the backend
+      
       await axios.post(
         'https://fad-backend.fly.dev/contact/send-email',
         {
@@ -48,7 +48,6 @@ const ContactForm: React.FC = () => {
       setIsSubmitted(true);
     } catch (error) {
       console.error(error);
-      // Handle error (e.g., show an error message)
     } finally {
       setIsSubmitDisabled(false);
     }

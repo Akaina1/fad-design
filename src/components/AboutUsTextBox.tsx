@@ -1,4 +1,3 @@
-// AboutUsTextBox.tsx
 import React from 'react';
 
 const AboutUsTextBox: React.FC = () => {

@@ -1,4 +1,3 @@
-// ProjectsScrollContainer.tsx
 import React from "react";
 import { TeamCard } from "./TeamCard";
 
@@ -27,7 +26,7 @@ const teamData = [
         visibleText: "Founder 6",
         revealText: "This could be you...",
       },
-    // Add more team members as needed
+    
   ];
   
   export const TeamScrollContainer: React.FC = () => {

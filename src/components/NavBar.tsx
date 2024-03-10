@@ -1,6 +1,5 @@
-// NavBar.tsx
 import React from 'react';
-import NavButton from './NavButton'; // Adjust the path based on your project structure
+import NavButton from './NavButton'; 
 import '../app/globals.css';
 
 const NavBar: React.FC = () => {

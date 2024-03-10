@@ -1,13 +1,11 @@
-// pages/Projects/FAD.tsx
 import React from 'react';
 import NavBar from '@/components/NavBar';
 import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
 import ProjectInformationContainer from '@/components/ProjectInformationContainer';
-import { GridBackgroundDemo } from '@/components/GridBackground'; // Import the GridBackgroundDemo component
-
+import { GridBackgroundDemo } from '@/components/GridBackground'; 
 const FAD: React.FC = () => {  
-    // Placeholder project data, replace with actual project data
+    
     const projectData = {
       projectName: 'FAD Design Website',
       projectPhotoUrl: '/IMG/Fad_Project_Photo.png',

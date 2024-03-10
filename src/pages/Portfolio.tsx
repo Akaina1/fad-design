@@ -3,9 +3,8 @@ import NavBar from '@/components/NavBar';
 import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
 import { ProjectsScrollContainer } from '@/components/ProjectsScrollContainer';
-import { GridBackgroundDemo } from '@/components/GridBackground'; // Import the GridBackgroundDemo component
+import { GridBackgroundDemo } from '@/components/GridBackground'; 
 
-// Your page component
 const Portfolio: React.FC = () => {
   return (
     <div className="relative min-h-screen bg-white">

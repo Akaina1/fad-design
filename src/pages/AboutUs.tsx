@@ -4,9 +4,8 @@ import LogoContainer from '@/components/LogoContainer';
 import Footer from '@/components/Footer';
 import F3Container from '@/components/F3Container';
 import AboutUsTextBox from '@/components/AboutUsTextBox';
-import { GridBackgroundDemo } from '@/components/GridBackground'; // Import the GridBackgroundDemo component
+import { GridBackgroundDemo } from '@/components/GridBackground'; 
 
-// Your page component
 const AboutUs: React.FC = () => {
   return (
     <div className="relative min-h-screen bg-white">

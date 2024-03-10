@@ -1,4 +1,3 @@
-// ProjectsScrollContainer.tsx
 import React from "react";
 import { ProjectCard } from "./ProjectCard";
 
@@ -38,7 +37,7 @@ const projectData = [
     viewDetailsLink: "/Projects/Project1",
     liveLink: "https://example.com/project1-live",
   },
-  // Add more projects as needed
+  
 ];
 
 export const ProjectsScrollContainer: React.FC = () => {
